@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo-container">
+        <svg class="logo-image" viewBox="0 0 448 512" width="100" title="grip-horizontal">
+          <path
+            d="M96 288H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zM96 96H32c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32zm160 0h-64c-17.67 0-32 14.33-32 32v64c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-64c0-17.67-14.33-32-32-32z" />
+        </svg>
+        <h2 class="logo-title">Grids</h2>
+      </div>
+      <div class="nav">
+        <a href="#home" class="home nav-link active"><span class="nav-link-span">Home</span></a>
+        <a href="#regular" class="regular nav-link"><span class="nav-link-span">Regular</span></a>
+        <a href="#masonary" class="masonary nav-link"><span class="nav-link-span">Masonary</span></a>
+        <a href="#variable" class="variable nav-link"><span class="nav-link-span">Variable</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-wrapper">
+      <h3 class="section-title">What is <span class="highlight">Grids</span>?</h3>
+      <p class="section-description">Description about the page including the reason for page / project. Selection and
+        code to be made available to anyone who comes across the page and wants it.</p>
+      <div class="grid-row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="regular">
+    <div class="section-wrapper">
+      <h3 class="section-title"><span class="highlight">Regular</span> Grids</h3>
+      <p class="section-description">Description about the page including the reason for page / project. Selection and
+        code to be made available to anyone who comes across the page and wants it.</p>
+      <div class="grid-regular">
+        <p class="about">This is the 1st div in the grid and can be expanded by using the
+          <code>grid-column: span ?</code>
+          function inside the CSS file. <br><br>This can also be used for the number of rows with
+          <code>grid-row: span ?</code> function. <br><br>The grid can be designed to have specific named areas that
+          classes can be attached to using the <code>grid-template-areas: "name name2"</code> function.
+        </p>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="masonary">
+    <div class="section-wrapper">
+      <h3 class="section-title"><span class="highlight">Masonary</span> Grids</h3>
+      <p class="section-description">Masonary grids have become very popular in displaying images , blocks of text or
+        cards. Some of the most common places to see this would be <a href="https://www.pinterest.co.uk">Pinterst</a>.
+      </p>
+      <h4 class="section-sub-heading">Using Basic CSS</h4>
+      <p class="section-description">There are a number of ways you can create a masonary effect ussing CSS. A super
+        simple way is by using the <code>colums: 3;</code> pseudo-class. The example below uses this method:</p>
+      <div class="grid-masonary">
+        <img class="masonary-item"
+          src="https://images.unsplash.com/photo-1660939067106-96388303a6e2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDcyMzA&ixlib=rb-1.2.1&q=80"
+          alt="one">
+        <img
+          src="https://images.unsplash.com/photo-1660194296643-5e375035961e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDcyMzA&ixlib=rb-1.2.1&q=80"
+          alt="two" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1662226699990-3a01a4798e09?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDcyMzA&ixlib=rb-1.2.1&q=80"
+          alt="three" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1564569918956-2cf8a82eb1e2?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDg4NzA&ixlib=rb-1.2.1&q=80"
+          alt="four" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1660800522281-cc04bdd1c9f0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDg5ODk&ixlib=rb-1.2.1&q=80"
+          alt="five" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1660836990665-67821c7845df?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDg5ODk&ixlib=rb-1.2.1&q=80"
+          alt="six" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1660901843179-20379b615f57?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDg5ODk&ixlib=rb-1.2.1&q=80"
+          alt="seven" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1662047919295-9d3a9d47b3a4?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDkwNTE&ixlib=rb-1.2.1&q=80"
+          alt="eight" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1662658825081-3287a5c25fef?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDkwNTE&ixlib=rb-1.2.1&q=80"
+          alt="nine" class="masonary-item">
+        <img
+          src="https://images.unsplash.com/photo-1662497299514-898124f20365?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI5MDkwNzg&ixlib=rb-1.2.1&q=80"
+          alt="ten" class="masonary-item">
+      </div>
+    </div>
+  </section>
+
+  <section id="variable">
+    <div class="section-wrapper">
+      <h3 class="section-title"><span class="highlight">Variable</span> Grids</h3>
+      <p class="section-description">Description about the page including the reason for page / project. Selection and
+        code to be made available to anyone who comes across the page and wants it.</p>
+      <div class="grid-variable">
+        <img
+          src="https://images.unsplash.com/photo-1663051957237-8da7729a1c15?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTgzNTg&ixlib=rb-1.2.1&q=80"
+          alt="eleven">
+        <img
+          src="https://images.unsplash.com/photo-1662485269829-cba34eb47cae?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTgzNzY&ixlib=rb-1.2.1&q=80"
+          alt="twelve">
+        <img
+          src="https://images.unsplash.com/photo-1661881810814-0c6af8137860?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTgzNzY&ixlib=rb-1.2.1&q=80"
+          alt="thirteen">
+        <img
+          src="https://images.unsplash.com/photo-1662094280019-8f1fd31e8112?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTg0Mjg&ixlib=rb-1.2.1&q=80"
+          alt="eighteen">
+        <img
+          src="https://images.unsplash.com/photo-1663121679412-9eeff30ef817?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTgzNzY&ixlib=rb-1.2.1&q=80"
+          alt="fourteen">
+        <img
+          src="https://images.unsplash.com/photo-1662973394220-21abb964602d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTgzNzY&ixlib=rb-1.2.1&q=80"
+          alt="fifteen">
+        <img
+          src="https://images.unsplash.com/photo-1612355524117-22e2ff8c3f6d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTg0Mjg&ixlib=rb-1.2.1&q=80"
+          alt="sixteen">
+        <img
+          src="https://images.unsplash.com/photo-1661030419605-3d4ca9cda193?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM0OTg0Mjg&ixlib=rb-1.2.1&q=80"
+          alt="seventeen">
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

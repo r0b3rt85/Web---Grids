@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+:root {
+  --color-1: #3f5efb;
+  --color-2: #6d58d8;
+  --color-3: #9e52b3;
+  --color-4: #d34b8b;
+  --color-5: #fc466b;
+  --color-1-light: #eaedff;
+  --color-2-light: #e2dcff;
+  --color-3-light: #fbecff;
+  --color-4-light: #ffe1ef;
+  --color-5-light: #ffdbe3;
+  --gradient-230: linear-gradient(
+    230deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(109, 88, 216, 1) 25%,
+    rgba(158, 82, 179, 1) 50%,
+    rgba(211, 75, 139, 1) 75%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  --gradient-50: linear-gradient(
+    50deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(109, 88, 216, 1) 25%,
+    rgba(158, 82, 179, 1) 50%,
+    rgba(211, 75, 139, 1) 75%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  --gradient-230-light: linear-gradient(
+    230deg,
+    rgba(234, 237, 255, 1) 0%,
+    rgba(226, 220, 255, 1) 25%,
+    rgba(251, 236, 255, 1) 50%,
+    rgba(255, 225, 239, 1) 75%,
+    rgba(255, 219, 227, 1) 100%
+  );
+  --gradient-50-light: linear-gradient(
+    50deg,
+    rgba(234, 237, 255, 1) 0%,
+    rgba(226, 220, 255, 1) 25%,
+    rgba(251, 236, 255, 1) 50%,
+    rgba(255, 225, 239, 1) 75%,
+    rgba(255, 219, 227, 1) 100%
+  );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+
+  background: rgb(63, 94, 251);
+  background: var(--gradient-50);
+}
+
+.nav-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+  fill: whitesmoke;
+}
+
+.logo-title {
+  color: whitesmoke;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.logo-image:hover {
+  fill: black;
+}
+
+.logo-title:hover {
+  color: black;
+  font-weight: 400;
+}
+
+.nav-link {
+  height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0rem 1rem;
+}
+.nav-link:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.active {
+  font-weight: 700;
+  border-bottom: 2px solid whitesmoke;
+  transition: 0.3 ease-in-out border-bottom;
+}
+
+/* VARIATIONS */
+/* Colour and style variations for each section */
+#home {
+  background-color: var(--color-1-light);
+}
+#home span {
+  font-size: 1em;
+  color: var(--color-1);
+}
+#home a {
+  color: var(--color-1);
+}
+#regular {
+  background-color: var(--color-2-light);
+}
+#regular span {
+  font-size: 1em;
+  color: var(--color-2);
+}
+#regular a {
+  color: var(--color-2);
+}
+#masonary {
+  background-color: var(--color-3-light);
+}
+#masonary span {
+  font-size: 1em;
+  color: var(--color-3);
+}
+#masonary a {
+  color: var(--color-3);
+}
+#variable {
+  background-color: var(--color-4-light);
+}
+#variable span {
+  font-size: 1em;
+  color: var(--color-4);
+}
+#variable a {
+  color: var(--color-4);
+}
+
+/* SECTIONS */
+/* Section formatting */
+section {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-wrapper {
+  width: 1000px;
+  margin: 0em 1em;
+  padding-bottom: 2em;
+}
+.section-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.section-sub-heading {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.section-description {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+.section-description a {
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+}
+.section-description a:hover {
+  font-weight: 700;
+}
+code {
+  background-color: #cfd8dc;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+/* BOXES */
+/* Basic stylings and variations for the boxes - These would be replaced with images or other content*/
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+#home .box {
+  background-color: var(--color-1);
+}
+#regular .box {
+  background-color: var(--color-2);
+}
+#masonary .box {
+  background-color: var(--color-3);
+}
+#variable .box {
+  background-color: var(--color-4);
+}
+
+/* GRIDS */
+/*Grid for the about section*/
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  gap: 0.5em;
+  grid-auto-rows: minmax(100px, auto);
+}
+.grid-row:hover {
+  animation: 3s infinite alternate widen;
+}
+/* Silly animation testing for the about section at the top of the page */
+@keyframes widen {
+  from {
+    grid-template-columns: repeat(6, 100px);
+  }
+  50% {
+    grid-template-columns: repeat(6, 120px);
+  }
+  to {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* REGULAR GRID */
+/* Grids using CSS grid functions*/
+.grid-regular {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(100px, 1fr)
+  ); /* Defines the number of columns you want to have in your grid*/
+  grid-template-rows: auto;
+  grid-gap: 1em;
+}
+
+.grid-regular .about {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-regular .box {
+  min-height: 100px;
+}
+
+/* MASONARY */
+/* The 1st version used the columns CSS property only*/
+.grid-masonary {
+  columns: 2;
+  gap: 1em;
+}
+.masonary-item {
+  width: 100%;
+  margin: 0.5em;
+  border-radius: 1em;
+}
+/* MEDIA QUERIES*/
+@media (min-width: 900px) {
+  /* Larger screens */
+  .grid-masonary {
+    columns: 3;
+  }
+  .grid-regular {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
+}
+/* The 2nd version using the CSS grid functions*/
+.grid-masonary-CSS {
+  display: grid;
+}
+
+/* VARIABLE GRIDS */
+/* Uses CSS Grid function to define the base grid and adds customisation with additional options*/
+
+.grid-variable {
+  display: inline-grid;
+  grid-gap: 1em;
+}
+
+.grid-variable img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em; /* Consistent styling for all grids and images*/
+}
+
+.grid-variable :nth-child(3) {
+  /* Wide horizontal image spanning 2 columns */
+  grid-column: span 2;
+}
+.grid-variable :nth-child(4) {
+  /* Vertical image spanning 2 rows */
+  grid-row-end: span 2;
+}
